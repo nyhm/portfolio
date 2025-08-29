@@ -1,0 +1,321 @@
+    
+   .hero {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 0;
+    align-items: center;
+    background: #E9F4FF;
+    padding: 80px 0;
+    }
+    .hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #111827;
+    line-height: 1.2;
+    margin-left: 20px;
+    }
+    .hero h1 .small {
+    font-size: 40px;
+    font-weight: 700;
+    color: #111827;
+    line-height: 1.2;
+    }
+    .hero p {
+    font-size: 20px;
+    color: #475569;
+    margin-left: 20px;
+    }
+    .hero-image img {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    object-fit: cover;
+    }
+    .hero-image {
+    text-align: center; 
+    }
+    .hero-image .name {
+    margin-top: 12px;
+    font-size: 20px;
+    color: #475569;
+    }
+    .actions {
+      margin-left: 20px;
+    }
+    /* ボタン共通 */
+    .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 19px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-right: 12px;
+    }
+    /* 各SNSごと */
+    .github {
+    background: #fff;
+    color: #000;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    }
+    .youtube {
+    background: #FF4141;
+    color: #fff;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    }
+    .instagram {
+    background: conic-gradient(from 180deg at 50% 50%, #FF6A00, #F3FF11, #FF6A00, #FF0000, #FF00FB, #FF0000, #FF6A00);
+    color: #fff;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    }
+
+    @media (max-width: 768px){
+    .hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "desc"
+      "photo"
+      "buttons";
+    gap: 0;
+    align-items: center;
+    background: #E9F4FF;
+    padding: 80px 0;
+    }
+    .hero-text {
+    display: contents;
+    }
+    .hero h1 {
+    grid-area: title;
+    font-size: 28px;
+    font-weight: 700;
+    color: #111827;
+    line-height: 1.2;
+    margin-left: 20px;
+    }
+    .hero h1 .small {
+      font-size: 24px;
+      font-weight: 700;
+      color: #111827;
+      line-height: 1.2;
+    }
+    .hero-text p {
+    grid-area: desc;
+    }
+    .hero p {
+    font-size: 20px;
+    color: #475569;
+    margin-left: 20px;
+    }
+    .hero-image img {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    object-fit: cover;
+    }
+    .hero-image {
+    grid-area: photo;
+    text-align: center; 
+    }
+    .hero-image .name {
+    margin-top: 12px;
+    font-size: 20px;
+    color: #475569;
+    }
+    .actions {
+    grid-area: buttons;
+    }
+    /* ボタン共通 */
+    .btn {
+    display:  block; 
+    align-items: center;
+    justify-content: center;
+    padding: 7px 19px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center; 
+    margin: 0 20px;
+    margin-bottom: 12px;
+    }
+    /* 各SNSごと */
+    .github {
+    background: #fff;
+    color: #000;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    }
+    .youtube {
+    background: #FF4141;
+    color: #fff;
+    }
+    .instagram {
+    background: conic-gradient(from 180deg at 50% 50%, #FF6A00, #F3FF11, #FF6A00, #FF0000, #FF00FB, #FF0000, #FF6A00);
+    color: #fff;
+    }
+    }
+
+    .about {
+      background: #fff;          /* 背景色は自由 */
+      padding: 80px 20px;        /* 上下左右の余白 */
+    }
+    
+    .about .container {
+      max-width: 1200px;         /* 中央寄せ */
+      margin: 0 auto;
+    }
+    
+    .about h2 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 40px;           /* Figma値を反映 */
+      line-height: 48px;
+      color: #000;
+      margin-bottom: 24px;
+    }
+    @media (max-width: 768px){
+      .about h2 {
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        font-size: 24px;           /* Figma値を反映 */
+        line-height: 48px;
+        color: #000;
+        margin-bottom: 24px;
+        text-align: center;
+      }
+    }
+    
+    .about p,
+    .about li {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 20px;           /* Figma値を反映 */
+      line-height: 1.4;
+      color: #475569;
+      margin-bottom: 12px;
+    }
+    
+    .about ul {
+      list-style: none;          /* デフォルトの点を消す */
+      padding: 0;
+      margin: 0;
+    }
+    
+    .about li::before {
+      content: "・";             /* Figmaで付けてた点を再現 */
+      margin-right: 4px;
+    }
+    
+    .skills {
+      background: #fff;
+      padding: 80px 20px;
+    }
+    
+    .skills .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .skills h2 {
+      font-family: 'Inter', sans-serif;
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      color: #000;
+    }
+    
+    .skills h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      margin: 24px 0 12px;
+      color: #475569;
+    }
+    
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;      /* 折り返し可能に */
+      gap: 12px;            /* タグの間隔 */
+    }
+    
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 7px 12px;
+      background: #E5EDFF;
+      border-radius: 8px;
+      box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+      font-family: 'Inter', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #000;
+    }
+    .projects {
+      background: #fff;
+      padding: 80px 20px;
+    }
+    
+    .projects .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .projects h2 {
+      font-family: 'Inter', sans-serif;
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      color: #000;
+    }
+    
+    .projects h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 20px;
+      color: #475569;
+    }
+    
+    .project-content {
+      display: grid;
+      grid-template-columns: 1fr; 
+      gap: 40px;
+      align-items: start;
+    }
+    
+    .project-images {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+    
+    .project-images img {
+      width: 50%;
+      object-fit: cover;
+    }
+    @media (max-width: 768px){
+    .project-images {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .project-images img {
+      width: 100%;
+      object-fit: cover;
+    }
+    }
+    
+    .project-text p {
+      font-family: 'Inter', sans-serif;
+      font-size: 20px;
+      line-height: 1.4;
+      color: #475569;
+      margin-bottom: 12px;
+    }
+    
