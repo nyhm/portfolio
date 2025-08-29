@@ -96,6 +96,7 @@
     color: #111827;
     line-height: 1.2;
     margin-left: 20px;
+    text-align: center;
     }
     .hero h1 .small {
       font-size: 24px;
@@ -105,28 +106,9 @@
     }
     .hero-text p {
     grid-area: desc;
+    text-align: center;
     }
-    .hero p {
-    font-size: 20px;
-    color: #475569;
-    margin-left: 20px;
-    }
-    .hero-image img {
-    width: 230px;
-    height: 230px;
-    border-radius: 50%;
-    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
-    object-fit: cover;
-    }
-    .hero-image {
-    grid-area: photo;
-    text-align: center; 
-    }
-    .hero-image .name {
-    margin-top: 12px;
-    font-size: 20px;
-    color: #475569;
-    }
+
     .actions {
     grid-area: buttons;
     }
@@ -144,20 +126,7 @@
     margin: 0 20px;
     margin-bottom: 12px;
     }
-    /* 各SNSごと */
-    .github {
-    background: #fff;
-    color: #000;
-    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
-    }
-    .youtube {
-    background: #FF4141;
-    color: #fff;
-    }
-    .instagram {
-    background: conic-gradient(from 180deg at 50% 50%, #FF6A00, #F3FF11, #FF6A00, #FF0000, #FF00FB, #FF0000, #FF6A00);
-    color: #fff;
-    }
+
     }
 
     .about {
